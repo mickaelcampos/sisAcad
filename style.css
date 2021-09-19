@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    background-color: #132972;
+    height: 70px;
+}
+
+nav.navbar {
+    padding: 0 20px;
+}
+
+.ufsc img {
+    height: 45px;
+    float: left;
+    margin: 10px 5px;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: 'Open Sans',sans-serif;
+    text-rendering: optimizelegibility;
+}
+
+.second h2 {
+    float: left;
+    border-left: 2px solid #00aef1;
+    padding: 5px 10px;
+    margin-left: 5px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.userheader {
+    float: right;
+    color: white;
+    margin-top: 50px;
+    margin-right: -10px;
+    font-size: 12px;
+}
+
+.userheader a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.userheader a:hover {
+    text-decoration: underline;
+}
+
+/* END HEADER RULES */
+
+ul.nav-tabs {
+    list-style: none;
+    display: flex;
+}
+
+ul.nav-tabs > li {
+    padding: 10px;
+    padding-left: 0px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul.nav-tabs > li > a {
+    font-size: 14px;
+    color: #333;
+    padding-left: 10px;
+}
+
+ul.nav-tabs > li:not(.active):not(:last-child) > a {
+    border-right: 1px solid #00aef1;
+}
+
+ul.nav-tabs > li:not(.active) > a {
+    color: #0070A8;
+    padding-right: 10px;
+}
+
+ul.nav-tabs > li:not(.active) {
+    border-bottom: 1px solid #E5E5E5;
+    padding-right: 0px;
+    cursor: pointer;
+}
+
+ul.nav-tabs > li:not(.active):hover {
+    background-color: #E5E5E5;
+}
+
+ul.nav-tabs > li.active {
+    border: 1px solid #E5E5E5;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* END NAV-TABS RULES */
+
+main {
+    margin: 40px;
+    display: flex;
+}
+
+nav.controle-curricular-menu {
+    width: 300px;
+    height: 218px;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+}
+
+ul.list-controle-curricular {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+ul.list-controle-curricular > li {
+    margin-bottom: 3px;
+    background-color: #132972;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul.list-controle-curricular > li:not(.active) {
+    background-color: #C4C4C4;
+    cursor: pointer;
+}
+
+ul.list-controle-curricular > li > a {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.list-controle-curricular > li:not(.active) > a {
+    color: #0070A8;
+}
+
+ul.list-controle-curricular > li:not(.active):hover {
+    background-color: #868686;
+}
+
+ul.list-controle-curricular > li:not(.active):hover > a {
+    color: #fff;
+}
+
+/* end controle-curricular-menu rules */
+
+aside.content {
+    width: 100%;
+    height: 600px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+aside.content table {
+    padding-top: 16px;
+}
+
+aside.content table.content-info-aluno {
+    border-spacing: 0px;
+}
+
+aside.content > table.content-info-aluno > tbody > tr > td {
+    padding: 3px 8px;
+}
+
+aside.content > table.content-info-aluno > tbody > tr.odd {
+    background-color: #ccdbe8;
+}
+
+aside.content > table.content-info-aluno > tbody > tr.even {
+    background-color: #b3d9e8;
+}
+
+/* end info-aluno rules */
+
+
+aside.content table.content-info-curriculo {
+    border-spacing: 0px;
+}
+
+aside.content > table.content-info-curriculo > tbody > tr > td {
+    padding: 3px 8px;
+}
+
+aside.content > table.content-info-curriculo > tbody > tr.odd {
+    background-color: #ccdbe8;
+}
+
+aside.content > table.content-info-curriculo > tbody > tr.even {
+    background-color: #b3d9e8;
+}
+
+/* end info-curriculo rules */
+
+
+aside.content table.content-controle-curricular {
+    border-spacing: 0px;
+}
+
+aside.content table.content-controle-curricular > tbody > tr > td {
+    padding: 3px 8px;
+}
+
+aside.content table.content-controle-curricular > thead > tr > td {
+    padding: 3px 8px;
+}
+
+aside.content table.content-controle-curricular > thead > tr {
+    background-color: #C4C4C4;
+}
+
+aside.content table.content-controle-curricular > tbody > tr.odd {
+    background-color: #ccdbe8;
+}
+
+aside.content table.content-controle-curricular > tbody > tr.even {
+    background-color: #b3d9e8;
+}
+
+aside.content > ul.list-fases {
+    list-style: none;
+    min-width: 580px
+}
+
+aside.content > ul.list-fases > li > h1 {
+    cursor: pointer;
+}
+
+/* end controle-curricular rules */
