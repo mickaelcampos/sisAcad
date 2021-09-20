@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
     color: #333;
@@ -25,7 +25,7 @@ nav.navbar {
 
 h2 {
     font-size: 28px;
-    font-family: 'Open Sans',sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-rendering: optimizelegibility;
 }
 
@@ -72,7 +72,8 @@ ul.nav-tabs > li {
 ul.nav-tabs > li > a {
     font-size: 14px;
     color: #333;
-    padding-left: 10px;
+    padding-left: 10px;    
+    text-decoration: none;
 }
 
 ul.nav-tabs > li:not(.active):not(:last-child) > a {
@@ -80,22 +81,22 @@ ul.nav-tabs > li:not(.active):not(:last-child) > a {
 }
 
 ul.nav-tabs > li:not(.active) > a {
-    color: #0070A8;
+    color: #0070a8;
     padding-right: 10px;
 }
 
 ul.nav-tabs > li:not(.active) {
-    border-bottom: 1px solid #E5E5E5;
+    border-bottom: 1px solid #e5e5e5;
     padding-right: 0px;
     cursor: pointer;
 }
 
 ul.nav-tabs > li:not(.active):hover {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 }
 
 ul.nav-tabs > li.active {
-    border: 1px solid #E5E5E5;
+    border: 1px solid #e5e5e5;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -112,8 +113,53 @@ nav.controle-curricular-menu {
     width: 300px;
     height: 218px;
     border-radius: 5px;
-    border: 1px solid #E5E5E5;
-    background-color: #E5E5E5;
+    border: 1px solid #e5e5e5;
+    background-color: #e5e5e5;
+}
+
+nav.button-group {
+    height: 40px;
+    flex: 1;
+}
+
+ul.button-group-row {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px;
+    justify-content: center;
+}
+
+ul.button-group-row > li {
+    padding: 2px 30px;
+    background-color: #132972;
+    /* border-radius: 5px; */
+    display: flex;
+    flex-direction: row;
+}
+
+ul.button-group-row > li:not(.active) {
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+
+ul.button-group-row > li > a {
+    padding: 8px 0;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.button-group-row > li:not(.active) > a {
+    color: #0070a8;
+}
+
+ul.button-group-row > li:not(.active):hover {
+    background-color: #868686;
+}
+
+ul.button-group-row > li:not(.active):hover > a {
+    color: #fff;
 }
 
 ul.list-controle-curricular {
@@ -134,7 +180,7 @@ ul.list-controle-curricular > li {
 }
 
 ul.list-controle-curricular > li:not(.active) {
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     cursor: pointer;
 }
 
@@ -146,7 +192,7 @@ ul.list-controle-curricular > li > a {
 }
 
 ul.list-controle-curricular > li:not(.active) > a {
-    color: #0070A8;
+    color: #0070a8;
 }
 
 ul.list-controle-curricular > li:not(.active):hover {
@@ -162,7 +208,7 @@ ul.list-controle-curricular > li:not(.active):hover > a {
 aside.content {
     width: 100%;
     height: 600px;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     border-radius: 5px;
     margin-left: 10px;
     display: flex;
@@ -192,7 +238,6 @@ aside.content > table.content-info-aluno > tbody > tr.even {
 
 /* end info-aluno rules */
 
-
 aside.content table.content-info-curriculo {
     border-spacing: 0px;
 }
@@ -211,7 +256,6 @@ aside.content > table.content-info-curriculo > tbody > tr.even {
 
 /* end info-curriculo rules */
 
-
 aside.content table.content-controle-curricular {
     border-spacing: 0px;
 }
@@ -225,7 +269,7 @@ aside.content table.content-controle-curricular > thead > tr > td {
 }
 
 aside.content table.content-controle-curricular > thead > tr {
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
 }
 
 aside.content table.content-controle-curricular > tbody > tr.odd {
@@ -238,11 +282,97 @@ aside.content table.content-controle-curricular > tbody > tr.even {
 
 aside.content > ul.list-fases {
     list-style: none;
-    min-width: 580px
+    min-width: 580px;
 }
 
 aside.content > ul.list-fases > li > h1 {
     cursor: pointer;
+}
+
+aside.mini-content {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 30px;
+    /* display: flex;
+    align-items: flex-start;
+    justify-content: center; */
+}
+
+aside.mini-content  table.content-info-aluno {
+    border-spacing: 0px;
+}
+
+aside.mini-content  > table.content-info-aluno > tbody > tr > td {
+    padding: 3px 8px;
+}
+
+aside.mini-content  > table.content-info-aluno > tbody > tr.odd {
+    background-color: #ccdbe8;
+}
+
+aside.mini-content  > table.content-info-aluno > tbody > tr.even {
+    background-color: #b3d9e8;
+}
+
+/* end info-aluno rules */
+
+aside.mini-content  table.content-info-curriculo {
+    border-spacing: 0px;
+}
+
+aside.mini-content  > table.content-info-curriculo > tbody > tr > td {
+    padding: 3px 8px;
+}
+
+aside.mini-content  > table.content-info-curriculo > tbody > tr.odd {
+    background-color: #ccdbe8;
+}
+
+aside.mini-content  > table.content-info-curriculo > tbody > tr.even {
+    background-color: #b3d9e8;
+}
+
+/* end info-curriculo rules */
+
+aside.mini-content  table.content-controle-curricular {
+    border-spacing: 0px;
+}
+
+aside.mini-content  table.content-controle-curricular > tbody > tr > td {
+    padding: 3px 8px;
+}
+
+aside.mini-content  table.content-controle-curricular > thead > tr > td {
+    padding: 3px 8px;
+}
+
+aside.mini-content  table.content-controle-curricular > thead > tr {
+    background-color: #c4c4c4;
+}
+
+aside.mini-content  table.content-controle-curricular > tbody > tr.odd {
+    background-color: #ccdbe8;
+}
+
+aside.mini-content  table.content-controle-curricular > tbody > tr.even {
+    background-color: #b3d9e8;
+}
+
+aside.mini-content  > ul.list-fases {
+    list-style: none;
+    min-width: 580px;
+}
+
+aside.mini-content  > ul.list-fases > li > h1 {
+    cursor: pointer;
+}
+
+div.show-data {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* end controle-curricular rules */

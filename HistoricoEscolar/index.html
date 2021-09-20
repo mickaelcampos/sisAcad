@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="scripts.js"></script>
+    <title>Sisacad - Sistema Acadêmico Experimental
+    </title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="ufsc">
+                    <img src="../brasao.ufsc.svg" alt="UFSC">
+                </div>
+
+                <div class="second">
+                    <h2>Sisacad - Sistema Acadêmico Experimental</h2>
+                </div>
+
+                <div class="userheader">
+                    Nome do Aluno Aqui |
+                    <a href="#logout">Sair</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <nav>
+        <ul class="nav-tabs">
+            <li>
+                <a href="../ControleCurricular/index.html">Controle Curricular</a>
+            </li>
+            <li class="active">
+                <a title="Histórico Escolar">Histórico Escolar</a>
+            </li>
+            <li>
+                <a title="Relatório de Progresso">Relatório de Progresso</a>
+            </li>
+            <li>
+                <a title="Quadro de Horários">Quadro de Horários</a>
+            </li>
+            <li>
+                <a title="Plano de Conclusão">Plano de Conclusão</a>
+            </li>
+            <li>
+                <a title="Ajuste Matrícula">Ajuste Matrícula</a>
+            </li>
+            <li>
+                <a title="Atv. Complementar">Atv. Complementar</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <nav class="controle-curricular-menu">
+            <ul class="list-controle-curricular">
+                <li onclick="openClose('button-group', event)">
+                    <a title="year">2021</a>
+                </li>
+                <li>
+                    <a title="year">2020</a>
+                </li>
+                <li>
+                    <a title="year">2019</a>
+                </li>
+                <li>
+                    <a title="year">2018</a>
+                </li>
+                <li>
+                    <a title="year">2017</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="show-data">
+            <nav class="button-group" id="button-group" hidden="true">
+                <ul class="button-group-row">
+                    <li style="border-radius: 10px 0px 0px 10px;" onclick="openClose('mini-content', event)">
+                        <a title="year">1º semestre</a>
+                    </li>
+                    <li style="border-radius: 0px 10px 10px 0px;">
+                        <a title="year">2º semestre</a>
+                    </li>
+                </ul>
+            </nav>
+            <aside class="mini-content" id="mini-content" hidden="true">
+                <table class="content-info-curriculo">
+                    <tr class="odd">
+                        <td>Código</td>
+                        <td>Disciplina</td>
+                        <td>Carga HA</td>
+                        <td>Nota</td>
+                        <td>Freq</td>
+                        <td>Observações</td>
+                    </tr>
+                    <tr class="even">
+                        <td>INE5600</td>
+                        <td>Bancos de Dados III</td>
+                        <td>36</td>
+                        <td></td>
+                        <td></td>
+                        <td>Cursando (sujeito a alterações)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td>INE5619</td>
+                        <td>Administração e Gerência de Redes de Computadores</td>
+                        <td>72</td>
+                        <td></td>
+                        <td></td>
+                        <td>Cursando (sujeito a alterações)</td>
+                    </tr>
+                    <tr class="even">
+                        <td>INE5621</td>
+                        <td>Informática e Sociedade</td>
+                        <td>36</td>
+                        <td></td>
+                        <td></td>
+                        <td>Cursando (sujeito a alterações)</td>
+                    </tr>
+                    <tr class="odd">
+                        <td>INE5622</td>
+                        <td>Introdução a Compiladores</td>
+                        <td>72</td>
+                        <td></td>
+                        <td></td>
+                        <td>Cursando (sujeito a alterações)</td>
+                    </tr>
+                    <tr class="even">
+                        <td>INE5624</td>
+                        <td>Engenharia de Usabilidade</td>
+                        <td>72</td>
+                        <td></td>
+                        <td></td>
+                        <td>Cursando (sujeito a alterações)</td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+    </main>
+</body>
+
+</html>
